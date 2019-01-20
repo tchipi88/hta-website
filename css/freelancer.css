@@ -105,8 +105,7 @@ header .intro-text .skills {
 .navbar-custom {
   background: #dda338;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
+   font-weight: 700;
   border: none;
 }
 .navbar-custom a:focus {
@@ -533,3 +532,41 @@ fieldset[disabled] .btn-success.active {
 .featurette-divider {
   margin: 40px 0; /* Space out the Bootstrap <hr> more */
 }
+
+header.masthead {
+    padding-top: calc(6rem + 72px);
+    padding-bottom: 6rem;
+
+     /* The image used */
+    background-image: url("../img/header3.png");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    position: relative;
+
+     /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: black;
+}
+
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 767px) {
+  header.masthead {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+       background-image: url("../img/header3_767.png");
+  }
+}
+
